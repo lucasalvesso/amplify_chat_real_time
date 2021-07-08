@@ -1,0 +1,13 @@
+type User @model {
+    id: ID!
+    name: String!
+    messages: [Message] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Message @model @key(name: "byUser", fields: ["userId"]) {
+    id: ID!
+    userId: ID!
+    user: User @connection(fields: ["userId"])
+    content: String!
+    ttl: AWSTimestamp
+}
