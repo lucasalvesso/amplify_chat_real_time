@@ -1,3 +1,7 @@
+# LIVE DEMO
+https://master.d2m13tpx3f1fce.amplifyapp.com/
+
+
 # amplify_chat_real_time
 
 ## Project setup
